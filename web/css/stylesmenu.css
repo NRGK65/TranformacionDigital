@@ -1,0 +1,104 @@
+body{
+    background-color: #deffd6;
+    /* background-color: #FF4500 ;        */
+    /* padding: 25px; */
+    /* font-family: Arial; */
+
+    /* iuGradients.com */
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+
+#menu{
+    background-color: #1a6907;
+
+    /* iuGradients.com */
+    background: #0575E6;    /* #00F260;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+            
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+    line-height: 3 rem;
+    position: relative;
+}
+
+#menu li ul{
+    position: absolute;
+}
+
+#menu a{
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    padding: 2 2em;
+    text-decoration: none;
+    transition: .8s;
+}
+            
+#menu a:hover{
+    background-color: #00ff22 ;
+    /* background-color: #FF4500 ;    */
+    color: black;
+}
+
+
+/*Primer nivel*/
+#menu > ul{
+    display: table;
+    width: 100%;    
+}
+
+
+#menu > ul > li{
+    float: left ;
+}
+
+/*Segundo nivel*/
+#menu li li{
+    background-color: #1a6907;
+    background-color: #0B9210 ;
+    /* background-color: #FF4500 ;    */
+    max-height: 0;
+    transition: all .8s;    
+    overflow: hidden;
+    /* width: 120px;    */
+}
+
+#menu li:hover >ul > li{
+    max-height: 1000px;
+    overflow: visible;
+}
+
+#menu > ul > li > ul{
+    top: 100% ;
+}
+
+/*Tercer nivel*/
+#menu ul ul ul{
+    left: 100%;
+    top: 0;
+}
+
+/*Cuarto nivel - cerrado*/
+#menu ul ul ul ul{
+    display: none;
+}
+
+#salir
+
+
+.item-r{
+    float: right;
+}
+
